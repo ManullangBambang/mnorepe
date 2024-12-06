@@ -1,0 +1,44 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      typecript:
+        specifier: 0.0.1-security
+        version: 0.0.1-security
+      typescript:
+        specifier: ^5.7.2
+        version: 5.7.2
+
+  packages/shared:
+    dependencies:
+      typescript:
+        specifier: ^5.7.2
+        version: 5.7.2
+
+  packages/ui:
+    dependencies:
+      '@test/shared':
+        specifier: link:..\shared
+        version: link:../shared
+
+packages:
+
+  typecript@0.0.1-security:
+    resolution: {integrity: sha512-88WUWdO0zl/cC+X44m7TJkNssn0sTwZOSAyZu7ZmY6BfGJ4idVWJGjFmd6wEjS3yhWUYrAszzNMHZMIJ7h3ycg==}
+
+  typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  typecript@0.0.1-security: {}
+
+  typescript@5.7.2: {}
